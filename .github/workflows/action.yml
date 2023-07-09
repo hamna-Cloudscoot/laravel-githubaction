@@ -23,7 +23,7 @@ jobs:
           
       - name: Install Composer
         run: |
-            composer install --no-scripts
+            install composer
             
       - name: Install dependencies
         run: php composer.phar install --no-interaction --no-progress --prefer-dist
