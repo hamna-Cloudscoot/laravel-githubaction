@@ -23,10 +23,8 @@ jobs:
           
       - name: Install Composer
         run: |
-          php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-          php composer-setup.php --quiet
-          php -r "unlink('composer-setup.php'); 
-
+            composer install --no-scripts
+            
       - name: Install dependencies
         run: php composer.phar install --no-interaction --no-progress --prefer-dist
 
