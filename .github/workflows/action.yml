@@ -29,6 +29,3 @@ jobs:
 
       - name: Generate application key
         run: php artisan key:generate
-
-      - name: Build assets (optional)
-        run: npm install && npm run production
