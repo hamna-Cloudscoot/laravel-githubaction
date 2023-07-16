@@ -29,3 +29,6 @@ jobs:
 
       - name: Generate application key
         run: php artisan key:generate
+        
+      - name: install dependciies
+        run: npm ci && npm run dev
